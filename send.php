@@ -3,7 +3,7 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST[
         $to = 'poltorina@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Заказ'; //Загаловок сообщения
         $email = $_POST['email'];
-        $to2 = $email; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $to2 = $email;
         $radio = $_POST["radio"];
         $aDoor = $_POST['check'];
  
@@ -24,8 +24,6 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST[
             $message .= '<p>' . $radio[$i] . '</p>';
           }
 
-          // $message .= "<p>Систему в $radio </p>";
-
         if(empty($aDoor))
         {
           echo("<p>Вы ничего не выбрали.</p>");
@@ -39,7 +37,7 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST[
           }
         }
 
-        $message .= '</body></html>'; //Текст нащего сообщения можно использовать HTML теги
+        $message .= '</body></html>'; //Текст нащего сообщения, можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
         $headers .= "From: Отправитель <".$email.">\r\n"; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail

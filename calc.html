@@ -1,14 +1,36 @@
-<?php
-/*
-Template Name: Калькулятор
-*/
-?>
-<?php get_header(); ?>
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/calc.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/calc.js"></script>
+    <title>calc</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="fixed-menu">
+            <a href="" class="logo"><img src="img/logo.png" alt="" id="logo"></a href="#">
+            <ul id="menu">
+            	<li><a href="">Системы защиты от краж</a></li>
+            	<li><a href="">Cветовые решения</a></li>
+            	<li><a href="">Услуги</a></li>
+            	<li><a href="">Контакты</a></li>
+            </ul>
+            <a href="" id="pros"><img src="img/pros.png" alt=""></a>
+            <div class="just-content">
+                <ul class="content-phone">
+                    <li>+38 044 <big>111-11-11</big></li>
+                    <li>+38 097 <big>111-11-11</big></li>
+                    <li>+38 093 <big>111-11-11</big></li>
+                </ul>
+            </div>
+        </div>
         <div class="content">
             <ul class="breadcrumb">
-               <?php the_breadcrumb(); ?>
+               <li><a href="">Главная</a></li>
+               <li>Калькулятор</li>
             </ul>
 
 			<div class="calc-bg">
@@ -30,26 +52,26 @@ Template Name: Калькулятор
 				<div id="border-grey">
 					<div class="tabs-panel">
 						<div id="one" class="info-panel">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
+							<div class="panel-img"><img src="img/prod1.png" alt=""></div>
+							<div class="panel-img"><img src="img/prod1.png" alt=""></div>
 							<h1 id="mono-system">АМ  MONO  СИСТЕМА</h1>
 							<p>Система на 90см состоит из<br>одной стойки с внешним блоком питания</p>
 						</div>
 						<div id="two" class="info-panel">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
+							<div class="panel-img"><img src="img/prod2.png" alt=""></div>
+							<div class="panel-img"><img src="img/prod1.png" alt=""></div>
 							<h1 id="mono-system">АМ  СИСТЕМА  DUAL  STANDART</h1>
 							<p>Система на 120см состоит из<br>двух стоек с внешним блоком питания</p>
 						</div>
 						<div id="three" class="info-panel">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
+							<div class="panel-img"><img src="img/prod1.png" alt=""></div>
+							<div class="panel-img"><img src="img/prod3.png" alt=""></div>
 							<h1 id="mono-system">АМ  СИСТЕМА  DUAL  MAXI</h1>
 							<p>Система на 160см состоит из<br>двух стоек с внешним блоком питания</p>
 						</div>
 						<div id="four" class="info-panel">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
-							<img src="http://goodwill.local/wp-content/uploads/2016/06/prod1.png" alt="">
+							<div class="panel-img"><img src="img/prod4.png" alt=""></div>
+							<div class="panel-img"><img src="img/prod2.png" alt=""></div>
 							<h1 id="mono-system">АМ  СИСТЕМА  SPLIT</h1>
 							<p>Система на 220см состоит из<br>вух стоек с внешним блоком питания</p>
 						</div>
@@ -109,6 +131,21 @@ Template Name: Калькулятор
 				</div>
 			</div>
         </div>
-
-
-<?php get_footer(); ?>
+        <div class="footer">
+            <div class="copy">© 111, 2016.</div>
+            <ul id="footer-menu">
+            	<li><a href="">Системы защиты от краж</a></li>
+            	<li><a href="">Cветовые решения</a></li>
+            	<li><a href="">Услуги</a></li>
+            	<li><a href="">Контакты</a></li>
+            </ul>
+            <div class="icon">
+                <a href=""><img src="img/ok1.png" alt=""></a>
+                <a href=""><img src="img/vk1.png" alt=""></a>
+                <a href=""><img src="img/gp1.png" alt=""></a>
+                <a href=""><img src="img/fb1.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

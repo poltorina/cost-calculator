@@ -1,1 +1,1 @@
-# cost-calculator
+# Simple cost calculator

@@ -332,7 +332,7 @@ input.button {
     min-height: 100%;
 }
 
-.calc-bg .tabs-panel .info-panel #mono-system {
+.calc-bg .tabs-panel .info-panel .mono-system {
     font-size: 25px;
     font-weight: 600;
 }
